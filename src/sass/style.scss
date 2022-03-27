@@ -1,5 +1,15 @@
+@import "variables";
+
 * {
-	font-family: 'Museo Moderno', sans-serif;	
+	font-family: 'MuseoModerno', sans-serif;	
+}
+
+*a {
+	text-decoration: none;
+	color: white;
+	&:hover {
+		color: white;
+	}	
 }
 
 .container {
@@ -7,3 +17,9 @@
 	margin: 0 auto;
 	
 }
+
+@import "promo";
+@import "header";
+@import "button";
+@import "media";
+

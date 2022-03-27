@@ -1,0 +1,38 @@
+@media (max-width: 1030px) {
+	.promo {
+		padding: 21px 40px 93px 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.promo {
+		min-height: 600px;
+		padding: 20px;
+		&__wrapper {
+			margin-top: 60px;
+			align-items: center;
+		}
+	}
+
+	.header {
+		&__logo {
+			width: 31%;
+		}
+		&__official {
+			width: 36%;
+		}
+		&__contacts {
+			width: 31%;
+		}
+	}
+}
+
+@media (max-width: 599px) {
+	
+}
+
+
+
+	
+		
+	
