@@ -40,13 +40,15 @@
 
 	&__content {
 		margin-top: 57px;
-		display: flex;
+		display: none;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		&_active {
+			display: flex;
+		}
 	}
 
 	&-item {
-		
 		padding: 20px;
 		min-height: 442px;
 		width: 303px;
@@ -153,14 +155,23 @@
 					left: -14px;
 					top: 7px;
 				}
-					
-
 			}
 		}
-
-		
+		&__back {
+			bottom: 0;
+			left: 50%;
+			transform: translateX(calc(-50% - 19px));
+			position: absolute;
+			font-size: 14px;
+			font-weight: 500;
+			text-align: center;
+			color: $main-color;
+			text-decoration: underline;
+			text-transform: uppercase;
+			&:hover {
+				content: '';
+				color: $main-color;
+			}
+		}
 	}
-
-
-	
 }
