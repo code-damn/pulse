@@ -2,12 +2,13 @@
 	padding-bottom: 79px;
 	&__tabs {
 		margin-top: 70px;
+		margin-bottom: 0;
+		padding-left: 0;
 	    list-style-type: none;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 0;
-		padding-left: 0;
+		flex-wrap: wrap;
 	}
 	&__tab {
 		height: 52px;
@@ -41,7 +42,7 @@
 	&__content {
 		margin-top: 57px;
 		display: none;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		flex-wrap: wrap;
 		&_active {
 			display: flex;

@@ -12,6 +12,14 @@
 	}	
 }
 
+*button {
+	&:hover {
+		background-color: rgb(250, 36, 36);
+		box-shadow: 0px 0px 10px 5px rgb(201, 195, 195);
+		transition: 0.3s all;
+	}
+}
+
 .container {
 	max-width: 950px;
 	margin: 0 auto;
@@ -28,5 +36,6 @@
 @import "carousel";
 @import "catalog";
 @import "reviews";
+@import "footer";
 @import "media";
 
