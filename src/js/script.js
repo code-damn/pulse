@@ -61,16 +61,15 @@ $(document).ready(function(){
 		if ($(this).scrollTop() > 1600) {
 			$('.pageup').fadeIn();
 		} else {
-			$('pageup').fadeOut
+			$('.pageup').fadeOut();
 		}
 	});
 
-	$("a[href*='#']").on("click", function(e){
-		const anchor = $(this);
-		$('html, body').stop().animate({
-		  scrollTop: $(anchor.attr('href')).offset().top
-		}, 555);
-		e.preventDefault();
+	$("a[href^='#']").click (function() {
+		const _href = $(this).attr("href");
+		$("html, body").animate({
+		  scrollTop: $(_href).offset().top+"px"
+		});
 		return false;
 	  });
   });
