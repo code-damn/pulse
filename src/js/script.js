@@ -9,8 +9,8 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		autoplay: false,
 		autoplaySpeed: 900,
-		prevArrow: '<button type="button" class="slick-prev"><img src="../icons/left.png"></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="../icons/right.png"></button>',
+		prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
+		nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
 		responsive: [
 			{
 			  breakpoint: 991,
@@ -65,7 +65,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$("a[href^='#']").click (function() {
+	$("a[href^='#up']").click (function() {
 		const _href = $(this).attr("href");
 		$("html, body").animate({
 		  scrollTop: $(_href).offset().top+"px"
