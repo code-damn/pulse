@@ -171,6 +171,12 @@
 			margin-bottom: 18px;
 		}
 	}
+
+	.modal {
+		&__close {
+			right: 0;
+		}
+	}
 }
 
 @media (max-width: 420px) {
@@ -251,6 +257,15 @@
 		&__addr {
 			font-size: 18px;
 		}
+	}
+
+	.modal {
+		width: 310px;
+		padding: 38px 10px 40px 10px;
+		.feed-form {
+			width: 100%;
+		}
+
 	}
 	
 }

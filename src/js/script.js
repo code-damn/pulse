@@ -54,4 +54,23 @@ $(document).ready(function(){
 			$('.overlay, #order').fadeIn('slow');
 		});
 	});
+
+	// Smooth scroll and pageup
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn();
+		} else {
+			$('pageup').fadeOut
+		}
+	});
+
+	$("a[href*='#']").on("click", function(e){
+		const anchor = $(this);
+		$('html, body').stop().animate({
+		  scrollTop: $(anchor.attr('href')).offset().top
+		}, 555);
+		e.preventDefault();
+		return false;
+	  });
   });

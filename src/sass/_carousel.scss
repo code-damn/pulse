@@ -29,6 +29,7 @@
 	.slick-dots li[class="slick-active"] button {
 		background: $main-color;
 		border: none;
+		box-shadow: none;
 	}
 
 	.slick-prev, .slick-next {
