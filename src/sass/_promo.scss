@@ -16,6 +16,9 @@
 		text-align: right;
 		color: white;
 		text-transform: uppercase;
+		animation: bounce;
+		animation-duration: 1.3s;
+		animation-delay: 1s;
 	}	
 
 	&__subheader {

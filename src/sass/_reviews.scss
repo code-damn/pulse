@@ -4,6 +4,8 @@
 		display: flex;
 		justify-content: flex-start;
 		padding: 30px 10px;
+		animation: fadeInUp;
+		animation-duration: 2s;
 	}	
 	&__photo {
 		padding-right: 61px;
